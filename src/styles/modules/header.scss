@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'search';
+    src:  url('../../iconfonts/iconfont.woff') format('woff'),
+    url('../../iconfonts/iconfont.ttf') format('truetype')
+  }
+
+// .container{
+//     width: 100%;
+        //头部
+        .wrap{
+            background-color:#fff;
+            width: 100%;
+            header{
+                background-color:#fff;
+                width: 1200px;
+                margin:0 auto;
+                height: 170px;
+                text-align: center;
+                display: flex;
+                justify-content: space-between;
+                align-items: center; 
+                .logo{
+                    flex:.1;
+                }
+                .head-center{
+                    flex:.4;
+                    display: flex;
+                    margin-top: 50px;
+                    height: 120px;
+                    flex-direction: column;
+                    .search{
+                        flex: .6;
+                        display: flex;
+                        border:1px solid #dedede;
+                        border-radius: 30px;
+                        input{
+                            width:80%;
+                            height: 95%;
+                            margin-left: 5%;
+                            border:none;
+                            border-right: 1px solid #dedede;
+                           
+                        }
+                        i{
+                            font-family: 'search' !important;
+                            width: 15%;
+                            color: #dedede;
+                            font-size: 30px;
+                            text-align: center;
+                        }
+                    }
+                    ul{
+                        text-align: center;
+                        display: flex;
+                        li{
+                            flex: 33.33%;
+                            // width:100px;
+                            padding:10px;
+                            float: left;
+                            text-align: center;
+                            a{
+                                width: 100%;
+                                height: 100%;
+                                padding:10px 10px;
+                                color: #333;
+                                font-size: 18px;
+                            }
+                            a:hover{
+                                color:red;
+                                border-bottom:2px solid #d93732;
+                            }
+                        }
+                        
+                    }
+                    
+                }
+                .login-register{
+                    flex:.3;
+                    display: flex;
+                    a{
+                        flex: 33.33%;
+                        color: #333;
+                        font-size: 16px;
+                        span:nth-child(1){
+                            width: 20%;
+                        }
+                        span:nth-child(2){
+                            width: 20%;
+                        }
+                        span:nth-child(3){
+                            width: 60%;
+                            padding-left: 50px;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    // }

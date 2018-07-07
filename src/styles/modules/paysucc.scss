@@ -1,0 +1,96 @@
+a{text-decoration: none;color: #333;}
+li{list-style: none;}
+i{font-style: normal;}
+b{font-weight: 400;}
+html,body{margin:0;padding:0;width: 100%;}
+@mixin course{
+    height: 160px;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .tit-top{
+        flex:.5;
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        .line{
+            height: 1px;
+            width:150px;
+            background: #666;
+            margin:0 20px;
+        }
+    }
+}
+@mixin ul{
+    width: 1160px;
+    height: 340px;
+    margin:0 auto;
+    background: #ccc;
+    display: flex;
+    li{
+        width:25%;
+        height: 80%;
+        margin-right: 10px;
+        background: #f99;
+    }
+    li:nth-child(1){
+        margin-left:-30px;
+    }
+}
+.container{
+    width: 100%;
+        //主体
+        .main_whole{
+            background-color:#ececec;
+            width: 100%;
+            overflow: hidden;
+            height: 510px;
+            .main{
+                width: 1200px;
+                margin: 0 auto;
+                overflow: hidden;
+                .main1{
+                    height: 100px;
+                    line-height: 100px;
+                    text-align: center;
+                    .icon{
+                        font-family:"iconfont" !important;
+                        font-size: 40px;
+                        color:red;
+                    }
+                    span{
+                        display: inline-block;
+                        font-size: 40px;
+                     
+                    }
+                }
+                .main2{
+                    font-size: 22px;
+                    height: 100px;
+                    text-align: center;
+                    span{
+                        display: inline-block;
+                        width: 100px;
+                        height: 100px;
+                        line-height: 100px;
+                        &:nth-of-type(2){
+                            text-align: left;
+                        }
+                        &:nth-of-type(4){
+                         text-align: left;
+                     }
+                    }
+                  
+                }
+                .main3{
+                    text-align: center;
+                    span{
+                        display: inline-block;
+                        width:150px;
+                    }
+                }
+            }
+        }
+    }
